@@ -1,0 +1,110 @@
+<div class="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <app-sidebar></app-sidebar>
+            </div>
+            <div class="col-sm-7">
+               <div class="profile row">
+                   <div class="col-3 col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                     <img class="profileImg" src="../../assets/img/profile.jpg">
+                    </div>
+                    <div class="col-9 col-sm-9 col-lg-9 col-md-9 col-xs-9">
+                      <h4 class="title">Rajat Bhandari</h4>
+                      <div class="col-6 col-sm-6 col-lg-6 col-md-6 col-xs-6">
+                         <p><span>Registration ID : 345678</span></p>
+                         <p><span>Subject : 345678</span></p>
+                         <p><span>DOB : 02-02-1999</span></p>
+                      </div>
+                      <div class="col-6 col-sm-6 col-lg-6 col-md-6 col-xs-6">
+                        <p><span>Registration ID : 345678</span></p>
+                        <p><span>Subject : 345678</span></p>
+                        <p><span>DOB : 02-02-1999</span></p>
+                     </div>
+                    </div>
+                </div>
+                <h4 class="app oppTitle">Ongoing Applications</h4>
+                     
+                        <mat-expansion-panel  class="mat-expanded">
+                            <mat-expansion-panel-header>
+                              <mat-panel-title>
+                                <p><span class="title">Test </span> - Marketing Analyst </p>
+                                <p class="title">Timming : {{ datetime | date:'dd-MM-yyyy HH:mm:ss' }}</p>
+                              </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <hr class="hr1">
+                            <p>Subject : &nbsp;&nbsp;&nbsp; abcd</p>
+                            <p>Duration : &nbsp;&nbsp;&nbsp; 60min</p>
+                            <p>Vanue : &nbsp;&nbsp;&nbsp; abcd</p>
+                            <a [routerLink]="" class="pull-right title">View Details </a>
+                          </mat-expansion-panel>
+                     <br>
+                    
+                          <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                              <mat-panel-title>
+                                <p><span class="title">Test </span> - Marketing Analyst </p>
+                                <p class="title">Timming : {{ datetime | date:'dd-MM-yyyy HH:mm:ss' }}</p></mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <hr class="hr1">
+                            <p>Subject : &nbsp;&nbsp;&nbsp; abcd</p>
+                            <p>Duration : &nbsp;&nbsp;&nbsp; 60min</p>
+                            <p>Vanue : &nbsp;&nbsp;&nbsp; abcd</p>
+                            <a [routerLink]="" class="pull-right title">View Details </a>
+                          </mat-expansion-panel>
+                      <br>
+                          
+                          <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                              <mat-panel-title>
+                                <p><span class="title">Test </span> - Marketing Analyst </p>
+                                <p class="title">Timming : {{ datetime | date:'dd-MM-yyyy HH:mm:ss' }}</p>
+                              </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <hr class="hr1">
+                            <p>Subject : &nbsp;&nbsp;&nbsp; abcd</p>
+                            <p>Duration : &nbsp;&nbsp;&nbsp; 60min</p>
+                            <p>Vanue : &nbsp;&nbsp;&nbsp; abcd</p>
+                            <a [routerLink]="" class="pull-right title">View Details </a>
+                          </mat-expansion-panel>
+                       <div class="text-center">
+                         <a [routerLink]="" class="more">View All (79)</a>
+                      </div>
+                    <br>
+                <h4 class="app">Opportunities</h4>
+                <div class="oppurtunity row">
+                    <p><span class="app"> SBI - Marketing Analyst</span><span class="pull-right app"> INR 30,000</span>
+                    </p>
+                    <p>21st April  &nbsp;&nbsp; Full Time &nbsp;&nbsp; Gurgaon</p>
+                    <button class="btn btn-default btn-sm btnCustom">Apply</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-default btn-sm btnCustom2" [attr.disabled]="true">Not Interested</button>
+                 </div>
+                 <div class="oppurtunity row disabled1">
+                    <p><span class="app"> SBI - Marketing Analyst</span><span class="pull-right app"> INR 30,000</span>
+                    </p>
+                    <p>21st April  &nbsp;&nbsp; Full Time &nbsp;&nbsp; Gurgaon</p>
+                 </div>
+                 <div class="oppurtunity row">
+                    <p><span class="app"> SBI - Marketing Analyst</span><span class="pull-right app"> INR 30,000</span>
+                    </p>
+                    <p>21st April  &nbsp;&nbsp; Full Time &nbsp;&nbsp; Gurgaon</p>
+                    <button class="btn btn-default btn-sm btnCustom">Apply</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-default btn-sm btnCustom2" [attr.disabled]="true">Not Interested</button>
+                 </div>
+                 <div class="oppurtunity row">
+                    <p><span class="app"> SBI - Marketing Analyst</span><span class="pull-right app"> INR 30,000</span>
+                    </p>
+                    <p>21st April  &nbsp;&nbsp; Full Time &nbsp;&nbsp; Gurgaon</p>
+                    <button class="btn btn-default btn-sm btnCustom">Apply</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-default btn-sm btnCustom2" [attr.disabled]="true">Not Interested</button>
+                 </div>
+                 <div class="view text-center">
+                    <a [routerLink]="" class="more">View All (100)</a>
+                 </div>
+             </div>
+            <div class="col-sm-3">
+                <app-notification></app-notification>
+            </div>
+        </div>
+    </div>
+</div>

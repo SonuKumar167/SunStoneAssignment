@@ -1,0 +1,17 @@
+.right-sidebar {
+    width: 300px;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    background: white;
+    overflow-x: hidden;
+    padding: 10px;
+    position: fixed;
+  }
+  @media screen and (max-width: 450px) {
+    .right-sidebar {display: none;}
+  }
+  .more{
+    text-decoration: none;
+    margin-left: 40px;
+  }
